@@ -1,0 +1,14 @@
+//theme fonts
+@import url("https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Montserrat:wght@200;300;400;500;600&family=Petit+Formal+Script&display=swap");
+$font-montserrat: "Montserrat", sans-serif;
+$font-petit: "Petit Formal Script", cursive;
+$font-kaushan: "Kaushan Script", cursive;
+
+//base template colors
+$theme-color: #ff8300;
+$base-color: #101820ff;
+$base-contrast: #f5f0f0;
+
+body {
+  font-family: $font-montserrat;
+}

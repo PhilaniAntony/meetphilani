@@ -1,0 +1,28 @@
+@mixin banner-button {
+  margin-top: 4.5rem;
+  border: 1px $base-contrast solid;
+  box-sizing: border-box;
+  color: $base-contrast;
+  border-radius: 2px;
+  padding: 7px 30px;
+  font-weight: 400;
+  font-size: 21px;
+
+  &:hover {
+    border: 1px $theme-color solid;
+    color: $theme-color;
+    font-weight: 600;
+  }
+}
+
+@mixin worksbutton($color1, $color2) {
+  border: 1px $color1 solid;
+  color: $color1;
+  border-radius: 2px;
+  padding: 5px 20px;
+  font-weight: 400;
+  &:hover {
+    border: 1px $color2 solid;
+    color: $color2;
+  }
+}

@@ -1,0 +1,69 @@
+//aboutme
+.aboutme {
+  margin-bottom: 1.5rem;
+  &-heading {
+    letter-spacing: 1px;
+  }
+  &-underliner {
+    border-color: $theme-color;
+    background-color: $theme-color;
+    height: 2px;
+    width: 25%;
+    margin-right: auto;
+  }
+  &-summary {
+    color: $base-color;
+    letter-spacing: 0.75px;
+  }
+  &-links--item {
+    font-size: 1.5rem;
+    padding-right: 1rem;
+    color: $base-color;
+    transition: all 0.5s ease-in;
+
+    &:hover {
+      color: $theme-color;
+      transform: scale(1.1);
+    }
+    &:visited {
+      color: $theme-color;
+    }
+  }
+  &-button {
+    &-works {
+      @include worksbutton($theme-color, $base-color);
+    }
+    &-cv {
+      @include worksbutton($base-color, $theme-color);
+    }
+  }
+}
+hr {
+  border: 2px $theme-color solid;
+}
+
+//services
+.services {
+  &-heading {
+    text-align: center;
+  }
+  &-underliner {
+    width: 10%;
+    margin: auto;
+    margin-bottom: 1rem;
+  }
+  &-summary {
+    margin: auto;
+    text-align: center;
+    width: 75%;
+    margin-bottom: 1.5rem;
+  }
+  &-card {
+    &_title {
+    }
+  }
+}
+span.service-card_title--icon {
+  color: $theme-color;
+  font-size: 95%;
+}

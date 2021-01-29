@@ -1,0 +1,61 @@
+.page-header {
+  background-image: linear-gradient(
+      to right bottom,
+      rgba($base-color, 0),
+      rgba($theme-color, 0.6)
+    ),
+    url("../images/pillz.jpg");
+  background-size: cover;
+  background-position: top;
+  color: $base-contrast;
+  height: 75vh;
+  margin-bottom: 1.5rem;
+  &_banner {
+    height: 85%;
+    position: relative;
+
+    &--item {
+      position: relative;
+      transform: translateY(15%);
+      height: 50vh;
+      align-items: center;
+    }
+    //title styles meet tony
+    &--title {
+      font-weight: 200;
+      letter-spacing: 0.75px;
+      transition: all 0.5s ease-in;
+      &:hover {
+        color: $theme-color;
+        letter-spacing: 1px;
+        font-weight: 600;
+      }
+    }
+    &--heading {
+      letter-spacing: 2px;
+      margin-bottom: 1.5rem;
+
+      &-locatio {
+        font-size: 80%;
+      }
+    }
+    &--button {
+      @include banner-button;
+    }
+    &--blockquote {
+      position: relative;
+      transform: translateY(-15%);
+      &-text {
+        font-style: italic;
+      }
+      &-cite {
+        font-weight: 600;
+        color: $base-contrast;
+        margin-bottom: 1rem;
+      }
+    }
+  }
+}
+.bg-light {
+  background-color: transparent !important;
+}

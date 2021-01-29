@@ -1,0 +1,29 @@
+.navbar-brand {
+  font-family: $font-kaushan;
+  color: $theme-color !important;
+  opacity: 0.9;
+  font-size: 2rem;
+  transition: all 0.5s ease;
+  &:hover {
+    color: $base-contrast !important;
+    transform: scale(1.1);
+  }
+}
+a.nav-link {
+  color: $base-contrast !important;
+  font-family: $font-montserrat;
+  font-weight: 500;
+  letter-spacing: 1px;
+  transition: all 0.5s ease;
+
+  &.active {
+    color: $theme-color !important;
+  }
+  &:hover {
+    color: $theme-color !important;
+    transform: scaleX(1.1);
+  }
+}
+li.nav-item {
+  padding: 0 15px;
+}

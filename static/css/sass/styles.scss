@@ -1,0 +1,20 @@
+//import abstract folder first
+@import "./abstract/variables";
+@import "./abstract/mixins";
+@import "./abstract/function";
+
+//import components
+@import "./components/buttons";
+@import "./components/carousel";
+@import "./components/slider";
+
+//import layouts
+@import "./layout/header";
+@import "./layout/navigation";
+@import "./layout/forms";
+@import "./layout/footer";
+
+//import pages
+@import "./pages/home";
+@import "./pages/portfolio";
+@import "./pages/services";
