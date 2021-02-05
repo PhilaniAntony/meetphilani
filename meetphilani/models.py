@@ -3,7 +3,7 @@ from django.db import models
 # Create your models here.
 
 
-class AboutMe(models.Model):
+class Aboutme(models.Model):
     title = models.CharField(max_length=50)
     descrption = models.TextField()
 
@@ -11,7 +11,7 @@ class AboutMe(models.Model):
         return self.title
 
 
-class Technology(models.Model):
+class Technologie(models.Model):
     title = models.CharField(max_length=50)
 
     def __str__(self):
@@ -23,7 +23,7 @@ class Project(models.Model):
     title = models.CharField(max_length=50)
     image = models.ImageField()
     description = models.TextField()
-    technology = models.ManyToManyField(Technology)
+    technology = models.ManyToManyField(Technologie)
     source_code = models.URLField()
     deployed_version = models.URLField()
 
@@ -41,7 +41,7 @@ class Message(models.Model):
         return self.name
 
 
-class Collaborations(models.Model):
+class Collaboration(models.Model):
     name = models.CharField(max_length=150)
     phone_number = models.CharField(max_length=20)
     email = models.EmailField()
