@@ -14,6 +14,10 @@
   &-summary {
     color: $base-color;
     letter-spacing: 0.75px;
+    @media (max-width: 320px) {
+      font-weight: 300;
+      //color: rgab($base-color, 0.8) !important;
+    }
   }
   &-links--item {
     font-size: 1.5rem;
@@ -44,6 +48,9 @@ hr {
 
 //services
 .services {
+  @media (max-width: 320px) {
+    margin-top: 3rem;
+  }
   &-heading {
     text-align: center;
   }
@@ -57,13 +64,186 @@ hr {
     text-align: center;
     width: 75%;
     margin-bottom: 1.5rem;
+    @media (max-width: 320px) {
+      font-weight: 300;
+    }
   }
   &-card {
-    &_title {
+    background-color: transparent;
+    box-sizing: border-box;
+    padding: 5px;
+    margin: auto;
+    border: 1px solid #f1f1f1;
+    perspective: 1000px;
+
+    @media (max-width: 320px) {
+      width: 95vw;
+      height: 27vh;
+    }
+
+    &-inner {
+      position: relative;
+      width: 100%;
+      height: 100%;
+      &--title {
+        z-index: 1000;
+      }
+      &--text {
+        z-index: 1000;
+      }
+      &--btn {
+        @include worksbutton($base-contrast, $theme-color);
+        z-index: 1000;
+      }
+
+      &--front {
+        height: 25vh;
+        text-align: center;
+        color: $base-contrast;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        &.one {
+          background: url("../images/intelligence.jpg");
+          background-size: cover;
+          position: relative;
+          &--overlay {
+            @include skill_card-overlay;
+          }
+        }
+        &.two {
+          background-image: url("../images/rpaflow.jpeg");
+          background-size: cover;
+          position: relative;
+          &--overlay {
+            @include skill_card-overlay;
+          }
+        }
+        &.three {
+          background-image: url("../images/WebApps.jpg");
+          background-size: cover;
+          position: relative;
+          &--overlay {
+            @include skill_card-overlay;
+          }
+        }
+        &.four {
+          background-image: url("../images/brands.jpeg");
+          background-size: cover;
+          position: relative;
+          &--overlay {
+            @include skill_card-overlay;
+          }
+        }
+      }
     }
   }
 }
 span.service-card_title--icon {
   color: $theme-color;
   font-size: 95%;
+}
+.portfolio {
+  margin-top: 3rem;
+  @media (max-width: 320px) {
+    margin-top: 1.5rem;
+  }
+  &-heading {
+    text-align: center;
+  }
+  &-underliner {
+    width: 10%;
+    margin: auto;
+    margin-bottom: 3rem;
+    @media (max-width: 320px) {
+      margin-bottom: 2rem;
+    }
+  }
+  &-card {
+    border-color: rgba($base-color, 0.6);
+    &-title {
+      color: $base-color;
+      font-weight: 300;
+    }
+    &-image {
+      height: 35vh;
+      border: 1px solid $base-color;
+    }
+    &-list {
+      //margin-top: -0.5rem;
+      & > li {
+        box-sizing: border-box;
+        background-color: $theme-color;
+        color: $base-contrast;
+        padding: 5px 10px;
+        border-radius: 5px;
+        font-size: 12px;
+        transition: all ease-in-out 0.5s;
+      }
+    }
+    &-link {
+      @include worksbutton($theme-color, $base-color);
+      margin-right: 1rem;
+      margin-bottom: 1rem;
+    }
+  }
+}
+.workexprience {
+  @media (max-width: 320px) {
+    text-align: center;
+  }
+  margin-top: 3rem;
+  @media (max-width: 320px) {
+    margin-top: 1.5rem;
+  }
+  &-heading {
+    text-align: center;
+  }
+  &-underliner {
+    width: 10%;
+    margin: auto;
+    margin-bottom: 3rem;
+    @media (max-width: 320px) {
+      margin-bottom: 2rem;
+    }
+  }
+}
+.contact {
+  @media (max-width: 320px) {
+    text-align: center;
+  }
+  margin-top: 3rem;
+  @media (max-width: 320px) {
+    margin-top: 1.5rem;
+  }
+  &-heading {
+    text-align: center;
+  }
+  &-underliner {
+    width: 10%;
+    margin: auto;
+    margin-bottom: 3rem;
+    @media (max-width: 320px) {
+      margin-bottom: 2rem;
+    }
+  }
+  &-logo {
+    text-align: center;
+    font-family: $font-kaushan;
+    color: $theme-color !important;
+    opacity: 0.9;
+    font-size: 4rem;
+    display: inline-block;
+    transition: all 0.5s ease;
+    &:hover {
+      color: $base-color !important;
+    }
+    @media (max-width: 320px) {
+      display: none;
+    }
+  }
+  &-btn {
+    @include worksbutton($theme-color, $base-color);
+  }
 }
