@@ -1,3 +1,4 @@
+{% load static %}
 <!doctype html>
 <html lang="en">
 
@@ -10,7 +11,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
     <!--  CSS -->
-    <link rel="stylesheet" href="./static/css/styles.css">
+    <link rel="stylesheet" href="{% static 'css/styles.css'%}">
     <title>Meet Tony</title>
 </head>
 
@@ -19,36 +20,51 @@
     <div class="page-header">
         <!-- page navigation-->
         <div class="page-header_nav">
-            {% include 'navbar.html' %} 
+           {% include 'navbar.html' %} 
         </div>
         <!-- page banner-->
-        <section class="page-header_banner">
+        <section class="page-header_banner" id="main-banner">
             <div class="container">
                 <!-- slide one-->
-                <div class="row align-items-center" id="first-slide">
-                    <div class="col-6 ">
-                        <h3 class="page-header_banner--title">
-                            Meet Tony
-                        </h3>
-                        <h1 class="page-header_banner--heading">
-                            A Bit Of My Work <br>
-                            <span class="page-header_banner--heading-locatio"> <i class="bi bi-briefcase"></i> Let's take a tour.</span>
-                          
-                        </h1>
-                        <a href="" class="btn btn-outline-warning">
-                            Hire Me
-                        </a>
+                <div class="row page-header_banner--item" id="first-slide">
+                    <div class="col-8 page-header_banner--item-left ">
+                        <div class="upper">
+                            <h3 class="page-header_banner--title">
+                                Meet Philani
+                            </h3>
+                            <h1 class="page-header_banner--heading">
+                                A Bit Of My Work <br/>
+                                Let's take a tour.
+                            </h1>
+                            <h2 class="page-header_banner--heading-locatio"> <i class="bi bi-geo"></i> Cape Town</h2>
+                            <a href='mailto:philani@lifechoices.co.za' class="btn page-header_banner--button">
+                                Mail Philani
+                            </a>
+                        </div>
+                        <div class="lower">
+                            <ul class="banner-link list-inline">
+                                <li class="list-inline-item">
+                                    <a href="https://www.linkedin.com/in/philani-antony-1900121a5/" target="_blank" class="banner-link--item"> <i class="bi bi-linkedin"></i> </a>
+                                </li>
+                                <li class="list-inline-item">
+                                    <a href="https://github.com/PhilaniAntony" target="_blank" class="banner-link--item"> <i class="bi bi-github"></i> </a>
+                                </li>
+                                <li class="list-inline-item">
+                                    <a href="https://repl.it/@PhilaniAntony" target="_blank"  class="banner-link--item"> <i class="bi bi-code-slash"></i> </a>
+                                </li>
+        
+                            </ul>
+                        </div>
                     </div>
-                    <div class="col-6">
-                        <figure class="text-end">
+                    <div class="col-4 page-header_banner--item-right">
+                        <figure class="page-header_banner--blockquote text-end">
                             <blockquote class="blockquote">
-                              <p class="qoute-text">
-                                  “Your work is going to fill a large part of your life, and the only way to be truly satisfied 
-                                  is to do what you believe is great work.And the only way to do great work is to love what you do.”</p>
+                              <p class="page-header_banner--blockquote-text">“Your work is going to fill a large part of your life, and the only way to be truly satisfied 
+                                is to do what you believe is great work.And the only way to do great work is to love what you do.”</p>
                             </blockquote>
                             <figcaption class="blockquote-footer">
-                               <cite title="Source Title">Steven Jobs.</cite> <br>
-                               <cite title="Source Title">Former Chief Executive Officer, Apple</cite> 
+                               <cite class="page-header_banner--blockquote-cite" title="Source Title">Steven Jobs.</cite> <br>
+                               <cite class="page-header_banner--blockquote-cite" title="Source Title">Former Chief Executive Officer, Apple</cite> 
                             </figcaption>
                           </figure>
                     </div>
@@ -56,95 +72,153 @@
                 
             </div>
         </section>
+        <div class="page-header_overlay"></div>
     </div>
-    <!-- About Me -->
-    <section class="aboutme">
+    <section class="portfolio">
         <div class="container">
-            <div class="row align-items-center mb-3">
-                <div class="col-4">
-                    <h2 class="aboutme-heading"> My Portfolio </h2>
-                    <hr class="aboutme-underliner" />
-                </div>
-                <div class="col-8">
-                    <p class="aboutme-summary">
-                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatum quo quis, rerum repellat neque, sint, dolor sapiente nemo dicta unde accusantium omnis? Temporibus error ea, assumenda mollitia tempora fugit est et unde earum praesentium illum.
-                    </p>
-                    <a href="#" class="btn btn-warning">View Works </a>
-                    <a href="#" class="btn btn-outline-warning">Download CV </a>
-                </div>
-            </div>
+            <h2 class="portfolio-heading">
+                Web Development
+            </h2>
+            <hr class="portfolio-underliner" />
+            <!--portfolio tags -->
             <div class="row">
-                <!--card one-->
-                <div class="col-4">
-                    <div class="portfolio-card">
-                        <h3 class="portfolio-card--title">Lorem, ipsum dolor.</h3>
-                        <hr class="portfolio-card--divider">
-                        <p class="portfolio-card--text">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                            Quod harum iusto ut voluptatum soluta?
-                        </p>
-                        <p class="portfolio-card--subtitle">Technologies</p>
-                        <ul class="list-inline">
-                            <li class="list-inline-item">Lorem ipsum</li>
-                            <li class="list-inline-item">Phasellus iaculis</li>
-                            <li class="list-inline-item">Nulla volutpat</li>
-                          </ul>
+                <div class="col-md-6 col-sm-12 mb-3">
+                    <div class="card portfolio-card">
+                        <img src="{% static 'images/thelook.png'%}" srcset="" alt="business intelligence analyst" class="img-fluid portfolio-card-image">
+                        <div class="card-body">
+                          <h4 class="portfolio-card-title">The Look</h4>
+                          <ul class="list-inline portfolio-card-list">
+                            <li class="list-inline-item">HTML</li>
+                            <li class="list-inline-item">SCSS</li>
+                            <li class="list-inline-item">JAVASCRIPT</li>
+                            <li class="list-inline-item">DJANGO</li>
+                         </ul>
+                         <a href="https://github.com/PhilaniAntony/The_Look" class="btn  portfolio-card-link">Source Code</a>
+                          <a href="https://thelookza.herokuapp.com/" class="btn portfolio-card-link">Deployed Version</a>
+                          
+                        </div>
                     </div>
                 </div>
-                <!--card two-->
-                <div class="col-4">
-                    <div class="portfolio-card">
-                        <h3 class="portfolio-card--title">Lorem, ipsum dolor.</h3>
-                        <hr class="portfolio-card--divider">
-                        <p class="portfolio-card--text">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                            Quod harum iusto ut voluptatum soluta?
-                        </p>
-                        <p class="portfolio-card--subtitle">Technologies</p>
-                        <ul class="list-inline">
-                            <li class="list-inline-item">Lorem ipsum</li>
-                            <li class="list-inline-item">Phasellus iaculis</li>
-                            <li class="list-inline-item">Nulla volutpat</li>
-                          </ul>
+                <!--col-->
+                <div class="col-md-6 col-sm-12 mb-3">
+                    <div class="card portfolio-card">
+                        <img src="{% static 'images/crm.jpg'%}" srcset="" alt="brand strategist" class="img-fluid portfolio-card-image">
+                        <div class="card-body">
+                          <h4 class="card-title portfolio-card-title">Django CRM</h4>
+                          <ul class="list-inline portfolio-card-list">
+                            <li class="list-inline-item">HTML</li>
+                            <li class="list-inline-item">TailwindCSS</li>
+                            <li class="list-inline-item">DJANGO</li>
+                         </ul>
+                         <a href="https://github.com/PhilaniAntony/django-crm" class="btn  portfolio-card-link">Source Code</a>
+                          <a href="https://pandacrm.herokuapp.com/" class="btn portfolio-card-link">Deployed Version</a>
+                         
+                        </div>
                     </div>
-                </div>
-                <!--card three-->
-                <div class="col-4">
-                    <div class="portfolio-card">
-                        <h3 class="portfolio-card--title">Lorem, ipsum dolor.</h3>
-                        <hr class="portfolio-card--divider">
-                        <p class="portfolio-card--text">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                            Quod harum iusto ut voluptatum soluta?
-                        </p>
-                        <p class="portfolio-card--subtitle">Technologies</p>
-                        <ul class="list-inline">
-                            <li class="list-inline-item">Lorem ipsum</li>
-                            <li class="list-inline-item">Phasellus iaculis</li>
-                            <li class="list-inline-item">Nulla volutpat</li>
-                          </ul>
-                    </div>
+                   
                 </div>
             </div>
+            
+        </div>
+    </section>
+    <section class="portfolio">
+        <div class="container">
+            <h2 class="portfolio-heading">
+                Robotic Process Automation
+            </h2>
+            <hr class="portfolio-underliner" />
+            <!--portfolio tags -->
             <div class="row">
-                <div class="col-4">
-                    <img src="./static/images/intelligence.jpg" srcset="" alt="business intelligence analyst" class="img-fluid">
+                <div class="col-md-6 col-sm-12 mb-3">
+                    <div class="card portfolio-card">
+                        <img src="{% static 'images/thelook.png'%}" srcset="" alt="business intelligence analyst" class="img-fluid portfolio-card-image">
+                        <div class="card-body">
+                          <h4 class="portfolio-card-title">The Look</h4>
+                          <ul class="list-inline portfolio-card-list">
+                            <li class="list-inline-item">HTML</li>
+                            <li class="list-inline-item">SCSS</li>
+                            <li class="list-inline-item">JAVASCRIPT</li>
+                            <li class="list-inline-item">DJANGO</li>
+                         </ul>
+                         <a href="https://github.com/PhilaniAntony/The_Look" class="btn  portfolio-card-link">Source Code</a>
+                          <a href="https://thelookza.herokuapp.com/" class="btn portfolio-card-link">Deployed Version</a>
+                          
+                        </div>
+                    </div>
                 </div>
-                <div class="col-4">
-                    <img src="./static/images/rpaflow.jpeg" srcset="" alt="bot developer" class="img-fluid">
-                </div>
-                <div class="col-4">
-                    <img src="./static/images/WebApps.jpg" srcset="" alt="web developer" class="img-fluid">
+                <!--col-->
+                <div class="col-md-6 col-sm-12 mb-3">
+                    <div class="card portfolio-card">
+                        <img src="{% static 'images/crm.jpg'%}" srcset="" alt="brand strategist" class="img-fluid portfolio-card-image">
+                        <div class="card-body">
+                          <h4 class="card-title portfolio-card-title">Django CRM</h4>
+                          <ul class="list-inline portfolio-card-list">
+                            <li class="list-inline-item">HTML</li>
+                            <li class="list-inline-item">TailwindCSS</li>
+                            <li class="list-inline-item">DJANGO</li>
+                         </ul>
+                         <a href="https://github.com/PhilaniAntony/django-crm" class="btn  portfolio-card-link">Source Code</a>
+                          <a href="https://pandacrm.herokuapp.com/" class="btn portfolio-card-link">Deployed Version</a>
+                         
+                        </div>
+                    </div>
+                   
                 </div>
             </div>
+            
+        </div>
+    </section>
+    <section class="portfolio">
+        <div class="container">
+            <h2 class="portfolio-heading">
+                BI Analytics
+            </h2>
+            <hr class="portfolio-underliner" />
+            <!--portfolio tags -->
+            <div class="row">
+                <div class="col-md-6 col-sm-12 mb-3">
+                    <div class="card portfolio-card">
+                        <img src="{% static 'images/thelook.png'%}" srcset="" alt="business intelligence analyst" class="img-fluid portfolio-card-image">
+                        <div class="card-body">
+                          <h4 class="portfolio-card-title">The Look</h4>
+                          <ul class="list-inline portfolio-card-list">
+                            <li class="list-inline-item">HTML</li>
+                            <li class="list-inline-item">SCSS</li>
+                            <li class="list-inline-item">JAVASCRIPT</li>
+                            <li class="list-inline-item">DJANGO</li>
+                         </ul>
+                         <a href="https://github.com/PhilaniAntony/The_Look" class="btn  portfolio-card-link">Source Code</a>
+                          <a href="https://thelookza.herokuapp.com/" class="btn portfolio-card-link">Deployed Version</a>
+                          
+                        </div>
+                    </div>
+                </div>
+                <!--col-->
+                <div class="col-md-6 col-sm-12 mb-3">
+                    <div class="card portfolio-card">
+                        <img src="{% static 'images/crm.jpg'%}" srcset="" alt="brand strategist" class="img-fluid portfolio-card-image">
+                        <div class="card-body">
+                          <h4 class="card-title portfolio-card-title">Django CRM</h4>
+                          <ul class="list-inline portfolio-card-list">
+                            <li class="list-inline-item">HTML</li>
+                            <li class="list-inline-item">TailwindCSS</li>
+                            <li class="list-inline-item">DJANGO</li>
+                         </ul>
+                         <a href="https://github.com/PhilaniAntony/django-crm" class="btn  portfolio-card-link">Source Code</a>
+                          <a href="https://pandacrm.herokuapp.com/" class="btn portfolio-card-link">Deployed Version</a>
+                         
+                        </div>
+                    </div>
+                   
+                </div>
+            </div>
+            
         </div>
     </section>
     <!--Contact -->
     <section class="contact">
         <div class="container">
-            <h2 class="contact-heading">
-                Lets's Collaborate !
-            </h2>
+            
             <div class="row align-items-center ">
                 <!--Contact Info-->
                 <div class="col-4">
@@ -175,33 +249,36 @@
                 </div>
                 <!--Contact Form-->
                 <div class="col-8">
-                    <h3 class="contact-subheading">Leave a message</h3>
-                    <form class="row g-3">
+                    <h3 class="contact-subheading">Let's Collaborate</h3>
+                    <form method='POST' class="row g-3">
+                        {% csrf_token %}
                         <!--Full Name-->
                         <div class="col-12">
                             <label for="fullname" class="form-label">Name</label>
-                            <input name="fullname" type="text" class="form-control" id="fullname">
+                           
+                            {{form.name}}
+                            
                         </div>
                         <!--Phone Number-->
                         <div class="col-md-6">
                             <label for="phone" class="form-label">Phone Number</label>
-                            <input name="phone" type="text" class="form-control" id="phone">
+                            {{form.phone_number}}
                         </div>
                         <!--Email-->
                         <div class="col-md-6">
                             <label for="email" class="form-label">Email</label>
-                            <input name="email" type="email" class="form-control" id="email">
+                            {{form.email}}
                         </div>
                         <!--Message-->
                         <div class="col-12">
                             <label for="message" class="form-label">Message</label>
-                            <textarea name="message" class="form-control" id="message"> </textarea>
+                            {{form.message}}
                         </div>
                         <!--submit-->
                         <div class="col-12">
-                            <button type="submit" class="btn btn-warning btn-lg"> Send Message</button>
+                            <button type="submit" class="btn contact-btn"> Send Message</button>
                         </div>
-                </div>
+                    </form>
 
             </div>
         </div>
@@ -215,10 +292,27 @@
         </div>
     </footer>
 
-
-
     <!-- Option 1: Bootstrap Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+    <script>
+        /* Because i didnt set placeholder values in forms.py they will be set here using vanilla Javascript
+//We start indexing at one because CSRF_token is considered and input field 
+*/
+
+//Query All input fields
+var form_fields = document.getElementsByTagName('input')
+form_fields[1].placeholder='Joe Luici';
+form_fields[2].placeholder='+27754564728';
+form_fields[3].placeholder='joe@gmail.com';
+
+
+for (var field in form_fields){	
+form_fields[field].className += 'form-control'
+}
+var message_box = document.getElementById('id_message');
+message_box.placeholder = 'Drop a message'
+message_box.className = 'form-control'
+</script>
 </body>
 
 </html>
