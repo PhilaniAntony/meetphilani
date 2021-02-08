@@ -49,7 +49,28 @@ body {
     transform: translateY(30%);
   }
 }
+@media (min-width: 320.9px) and (max-width: 375px) {
+  .page-header_banner--item-left {
+    transform: translateY(20%);
+  }
+}
+@media (min-width: 375.9px) and (max-width: 425px) {
+  .page-header_banner--item-left {
+    transform: translateY(25%);
+  }
+}
+@media (min-width: 425.9px) and (max-width: 768px) {
+  .page-header_banner--item-left {
+    transform: translateY(30%);
+  }
+}
+@media (min-width: 768.9px) and (max-width: 1024px) {
+  .page-header_banner--item-left {
+    transform: translateY(40%);
+  }
+}
 .page-header_banner--title {
+  display: inline-block;
   font-weight: 200;
   letter-spacing: 0.75px;
   transition: all 0.5s ease-in;
@@ -75,7 +96,6 @@ body {
   }
 }
 .page-header_banner--button {
-  margin-top: 2.5rem;
   border: 1px #f5f0f0 solid;
   box-sizing: border-box;
   color: #f5f0f0;
@@ -83,6 +103,7 @@ body {
   padding: 7px 30px;
   font-weight: 400;
   font-size: 21px;
+  margin-top: 7.5rem;
 }
 .page-header_banner--button:hover {
   border: 1px #ff8300 solid;
@@ -96,11 +117,31 @@ body {
     font-size: 20px;
   }
 }
+@media (max-width: 320px) {
+  .page-header_banner--button {
+    margin-top: 2.5rem;
+  }
+}
+@media (min-width: 320px) and (max-width: 768px) {
+  .page-header_banner--button {
+    margin-top: 3.5rem;
+  }
+}
+@media (min-width: 768.9px) and (max-width: 1024px) {
+  .page-header_banner--button {
+    margin-top: 4.5rem;
+  }
+}
+@media (min-width: 1024.9px) {
+  .page-header_banner--button {
+    margin-top: 4.5rem;
+  }
+}
 .page-header_banner--blockquote {
   position: relative;
   transform: translateY(-15%);
 }
-@media (max-width: 320px) {
+@media (max-width: 768px) {
   .page-header_banner--blockquote {
     display: none;
   }
@@ -127,6 +168,36 @@ body {
   position: relative;
   transform: translateY(350%);
 }
+@media (max-width: 320px) {
+  .lower {
+    transform: translateY(85%);
+  }
+}
+@media (min-width: 320px) and (max-width: 375px) {
+  .lower {
+    transform: translateY(175%);
+  }
+}
+@media (min-width: 375.9px) and (max-width: 425px) {
+  .lower {
+    transform: translateY(150%);
+  }
+}
+@media (min-width: 425.9px) and (max-width: 768px) {
+  .lower {
+    transform: translateY(200%);
+  }
+}
+@media (min-width: 768.9px) and (max-width: 1024px) {
+  .lower {
+    transform: translateY(200%);
+  }
+}
+@media (min-width: 1024.9px) {
+  .lower {
+    transform: translateY(200%);
+  }
+}
 
 a.banner-link--item {
   color: #f5f0f0;
@@ -140,6 +211,11 @@ a.banner-link--item:visited {
 a.banner-link--item:hover {
   color: #ff8300;
   transform: scale(1.1);
+}
+@media (max-width: 320px) {
+  a.banner-link--item {
+    padding-right: 1.5rem;
+  }
 }
 
 .navbar-brand {
@@ -171,6 +247,20 @@ a.nav-link:hover {
 
 li.nav-item {
   padding: 0 5px;
+}
+
+a.logo {
+  font-family: "Kaushan Script", cursive;
+  color: #ff8300 !important;
+  text-decoration: none;
+  opacity: 0.9;
+  font-size: 3rem;
+  transition: all 0.5s ease;
+}
+a.logo:hover {
+  color: #101820ff !important;
+  text-decoration: none;
+  transform: scale(1.1);
 }
 
 .footer {

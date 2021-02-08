@@ -1,3 +1,4 @@
+{% load static %}
 <!doctype html>
 <html lang="en">
 
@@ -49,7 +50,7 @@
                                     <a href="https://github.com/PhilaniAntony" target="_blank" class="banner-link--item"> <i class="bi bi-github"></i> </a>
                                 </li>
                                 <li class="list-inline-item">
-                                    <a hre="https://repl.it/@PhilaniAntony" target="_blank"  class="banner-link--item"> <i class="bi bi-code-slash"></i> </a>
+                                    <a href="https://repl.it/@PhilaniAntony" target="_blank"  class="banner-link--item"> <i class="bi bi-code-slash"></i> </a>
                                 </li>
         
                             </ul>
@@ -82,7 +83,7 @@
                 </div>
                 <div class="col-8">
                     <p class="aboutme-summary">
-                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatum quo quis, rerum repellat neque, sint, dolor sapiente nemo dicta unde accusantium omnis? Temporibus error ea, assumenda mollitia tempora fugit est et unde earum praesentium illum.
+                        A data enthsiast who fell in love with story telling and spoting the insights and trends in data.Lover of all things data science and it's implimenation in growing African nations economy and counter poverty.Passionate about learning, smart worker, curious  by nature and believes that each encouter as an opportunity to learn and grow.My ideal carrier next step is working with senior data scientist and rpa developers and soak as much knowledge l can and grow as a developer and data scientist.
                     </p>
                     <ul class="aboutme-links list-inline">
                         <li class="list-inline-item">
@@ -92,17 +93,18 @@
                             <a href="https://github.com/PhilaniAntony" target="_blank" class="aboutme-links--item"> <i class="bi bi-github"></i> </a>
                         </li>
                         <li class="list-inline-item">
-                            <a hre="https://repl.it/@PhilaniAntony" target="_blank"  class="aboutme-links--item"> <i class="bi bi-code-slash"></i> </a>
+                            <a href="https://repl.it/@PhilaniAntony" target="_blank"  class="aboutme-links--item"> <i class="bi bi-code-slash"></i> </a>
                         </li>
 
                     </ul>
-                    <a href="#" class="btn aboutme-button-works  mr-4 mb-2">View Works </a>
-                    <a href="#" class="btn aboutme-button-cv ml-4 mb-2">Download CV </a>
+                    <a href="{% url 'meetphilani:portfolio'%}" class="btn aboutme-button-works  mr-5 mb-2">View Works </a>
+                    <a href="#" class="btn aboutme-button-cv  mb-2">Download CV </a>
 
                 </div>
             </div>
         </div>
     </div>
+    
     <!-- Services -->
     <section class="services">
         <div class="container">
@@ -164,7 +166,7 @@
                                     Web Apps Development
                                     
                                 </h3>
-                                <a class="btn services-card-inner--btn">Details</a>
+                                <a href="{% url 'meetphilani:portfolio'%}" class="btn services-card-inner--btn">Details</a>
                                 <div class="services-card-inner--front one--overlay"></div>
                             </div>
                             
@@ -183,94 +185,13 @@
                                     Brand Development
                                     
                                 </h3>
-                                <button class="btn services-card-inner--btn">Details</button>
+                                <a href='mailto:philani@lifechoices.co.za' class="btn services-card-inner--btn">Contact Philani</a>
                                 <div class="services-card-inner--front one--overlay"></div>
                             </div>
                         </div>
                     </div>
                 </div>
 
-            </div>
-        </div>
-    </section>
-    <!--Portfolio Section-->
-    <section class="portfolio">
-        <div class="container">
-            <h2 class="portfolio-heading">
-                Latest Works
-            </h2>
-            <hr class="portfolio-underliner" />
-            <!--portfolio tags -->
-            <div class="row">
-                <div class="col-md-6 col-sm-12 mb-3">
-                    <div class="card portfolio-card">
-                        <img src="./static/images/intelligence.jpg" srcset="" alt="business intelligence analyst" class="img-fluid portfolio-card-image">
-                        <div class="card-body">
-                          <h4 class="portfolio-card-title">Card title</h4>
-                          <ul class="list-inline portfolio-card-list">
-                            <li class="list-inline-item">HTML</li>
-                            <li class="list-inline-item">TailwindCSS</li>
-                            <li class="list-inline-item">DJANGO</li>
-                         </ul>
-                         <a href="#!" class="btn  portfolio-card-link">Source Code</a>
-                          <a href="#!" class="btn portfolio-card-link">Deployed Version</a>
-                          
-                        </div>
-                    </div>
-                </div>
-                <!--col-->
-                <div class="col-md-6 col-sm-12 mb-3">
-                    <div class="card portfolio-card">
-                        <img src="./static/images/brands.jpeg" srcset="" alt="brand strategist" class="img-fluid portfolio-card-image">
-                        <div class="card-body">
-                          <h4 class="card-title portfolio-card-title">Card title</h4>
-                          <ul class="list-inline portfolio-card-list">
-                            <li class="list-inline-item">HTML</li>
-                            <li class="list-inline-item">TailwindCSS</li>
-                            <li class="list-inline-item">DJANGO</li>
-                         </ul>
-                         <a href="#!" class="btn  portfolio-card-link">Source Code</a>
-                          <a href="#!" class="btn portfolio-card-link">Deployed Version</a>
-                         
-                        </div>
-                    </div>
-                   
-                </div>
-                <!--col-->
-                <div class="col-md-6 col-sm-12 mb-3">
-                    <div class="card portfolio-card">
-                        <img src="./static/images/rpaflow.jpeg" srcset="" alt="bot developer" class="img-fluid portfolio-card-image">
-                        <div class="card-body">
-                            <h4 class="portfolio-card-title">Card title</h4>
-                            <ul class="list-inline portfolio-card-list">
-                              <li class="list-inline-item">HTML</li>
-                              <li class="list-inline-item">TailwindCSS</li>
-                              <li class="list-inline-item">DJANGO</li>
-                           </ul>
-                           <a href="#!" class="btn  portfolio-card-link">Source Code</a>
-                            <a href="#!" class="btn portfolio-card-link">Deployed Version</a>
-                            
-                        </div>
-                    </div>
-                    
-                </div>
-                <!--col-->
-                <div class="col-md-6 col-sm-12 mb-3">
-                    <div class="card portfolio-card">
-                        <img src="./static/images/WebApps.jpg" srcset="" alt="web developer" class="img-fluid portfolio-card-image">
-                        <div class="card-body">
-                            <h4 class="portfolio-card-title">Card title</h4>
-                            <ul class="list-inline portfolio-card-list">
-                              <li class="list-inline-item">HTML</li>
-                              <li class="list-inline-item">TailwindCSS</li>
-                              <li class="list-inline-item">DJANGO</li>
-                           </ul>
-                           <a href="#!" class="btn  portfolio-card-link">Source Code</a>
-                            <a href="#!" class="btn portfolio-card-link">Deployed Version</a>
-                            
-                        </div>
-                    </div>
-                </div>
             </div>
         </div>
     </section>
@@ -318,8 +239,84 @@
             </div>
         </div>
     </section>
+    <!--Portfolio Section-->
+    <section class="portfolio">
+        <div class="container">
+            <h2 class="portfolio-heading">
+                Latest Works
+            </h2>
+            <hr class="portfolio-underliner" />
+            <!--portfolio tags -->
+            <div class="row">
+                <div class="col-md-6 col-sm-12 mb-3">
+                    <div class="card portfolio-card">
+                        <img src="{% static 'images/thelook.png'%}" srcset="" alt="business intelligence analyst" class="img-fluid portfolio-card-image">
+                        <div class="card-body">
+                          <h4 class="portfolio-card-title">The Look</h4>
+                          <ul class="list-inline portfolio-card-list">
+                            <li class="list-inline-item">HTML</li>
+                            <li class="list-inline-item">SCSS</li>
+                            <li class="list-inline-item">JAVASCRIPT</li>
+                            <li class="list-inline-item">DJANGO</li>
+                         </ul>
+                         <a href="https://github.com/PhilaniAntony/The_Look" class="btn  portfolio-card-link">Source Code</a>
+                          <a href="https://thelookza.herokuapp.com/" class="btn portfolio-card-link">Deployed Version</a>
+                          
+                        </div>
+                    </div>
+                </div>
+                <!--col-->
+                <div class="col-md-6 col-sm-12 mb-3">
+                    <div class="card portfolio-card">
+                        <img src="{% static 'images/crm.jpg'%}" srcset="" alt="brand strategist" class="img-fluid portfolio-card-image">
+                        <div class="card-body">
+                          <h4 class="card-title portfolio-card-title">Django CRM</h4>
+                          <ul class="list-inline portfolio-card-list">
+                            <li class="list-inline-item">HTML</li>
+                            <li class="list-inline-item">TailwindCSS</li>
+                            <li class="list-inline-item">DJANGO</li>
+                         </ul>
+                         <a href="https://github.com/PhilaniAntony/django-crm" class="btn  portfolio-card-link">Source Code</a>
+                          <a href="https://pandacrm.herokuapp.com/" class="btn portfolio-card-link">Deployed Version</a>
+                         
+                        </div>
+                    </div>
+                   
+                </div>
+                <!--col-->
+                <div class="col-md-6 col-sm-12 mb-3">
+                    <div class="card portfolio-card">
+                        <img src="{% static 'images/rpashot.png' %}" srcset="" alt="bot developer" class="img-fluid portfolio-card-image">
+                        <div class="card-body">
+                            <h4 class="portfolio-card-title">Data Extractor</h4>
+                            <ul class="list-inline portfolio-card-list">
+                              <li class="list-inline-item">RPA</li>
+                              <li class="list-inline-item">AUTOMATION ANYWHERE</li>
+                           </ul>
+                            
+                        </div>
+                    </div>
+                    
+                </div>
+                <!--col-->
+                <div class="col-md-6 col-sm-12 mb-3">
+                    <div class="card portfolio-card">
+                        <img src="{% static 'images/sales.png'%}" srcset="" alt="web developer" class="img-fluid portfolio-card-image">
+                        <div class="card-body">
+                            <h4 class="portfolio-card-title">Sales Analytics</h4>
+                            <ul class="list-inline portfolio-card-list">
+                              <li class="list-inline-item">PYTHON</li>
+                              <li class="list-inline-item">DATA ANALYSIS</li>
+                           </ul> 
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
     <!--Contact -->
-    <section class="contact">
+    <section class="contact" id="contact">
         <div class="container">
             <h2 class="contact-heading">
                 Contact Me
@@ -352,7 +349,7 @@
                         </li>
 
                     </ul>
-                    
+                    <a class="logo" href="{% url 'meetphilani:home'%}">philani</a>
                 </div>
                 <!--Contact Form-->
                 <div class="col-md-8 col-sm-12">
