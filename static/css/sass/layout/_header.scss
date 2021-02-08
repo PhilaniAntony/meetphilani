@@ -21,15 +21,28 @@
   }
 
   &_banner {
-    height: 85%;
+    height: 100%;
     position: relative;
     z-index: 1000;
 
     &--item {
-      position: relative;
-      transform: translateY(15%);
-      height: 75vh;
-      align-items: center;
+      height: 100%;
+      display: flex;
+      flex-direction: row;
+      align-items: flex-end;
+
+      &-left {
+        //background-color: red;
+        align-self: flex-end;
+        position: relative;
+        transform: translateY(55%);
+        display: flex;
+        flex-direction: column;
+
+        @media (max-width: 320px) {
+          transform: translateY(30%);
+        }
+      }
     }
     //title styles meet tony
     &--title {
@@ -77,4 +90,26 @@
 }
 .bg-light {
   background-color: transparent !important;
+}
+.upper {
+  justify-self: center;
+}
+.lower {
+  justify-self: flex-end;
+  position: relative;
+  transform: translateY(350%);
+}
+a.banner-link--item {
+  color: $base-contrast;
+  font-size: 1.5rem;
+  padding-right: 2.5rem;
+  transition: all 0.5s ease-in;
+
+  &:visited {
+    color: $base-contrast;
+  }
+  &:hover {
+    color: $theme-color;
+    transform: scale(1.1);
+  }
 }

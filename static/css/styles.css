@@ -27,15 +27,27 @@ body {
   }
 }
 .page-header_banner {
-  height: 85%;
+  height: 100%;
   position: relative;
   z-index: 1000;
 }
 .page-header_banner--item {
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+}
+.page-header_banner--item-left {
+  align-self: flex-end;
   position: relative;
-  transform: translateY(15%);
-  height: 75vh;
-  align-items: center;
+  transform: translateY(55%);
+  display: flex;
+  flex-direction: column;
+}
+@media (max-width: 320px) {
+  .page-header_banner--item-left {
+    transform: translateY(30%);
+  }
 }
 .page-header_banner--title {
   font-weight: 200;
@@ -63,7 +75,7 @@ body {
   }
 }
 .page-header_banner--button {
-  margin-top: 4.5rem;
+  margin-top: 2.5rem;
   border: 1px #f5f0f0 solid;
   box-sizing: border-box;
   color: #f5f0f0;
@@ -104,6 +116,30 @@ body {
 
 .bg-light {
   background-color: transparent !important;
+}
+
+.upper {
+  justify-self: center;
+}
+
+.lower {
+  justify-self: flex-end;
+  position: relative;
+  transform: translateY(350%);
+}
+
+a.banner-link--item {
+  color: #f5f0f0;
+  font-size: 1.5rem;
+  padding-right: 2.5rem;
+  transition: all 0.5s ease-in;
+}
+a.banner-link--item:visited {
+  color: #f5f0f0;
+}
+a.banner-link--item:hover {
+  color: #ff8300;
+  transform: scale(1.1);
 }
 
 .navbar-brand {
