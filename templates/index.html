@@ -13,7 +13,7 @@
     <!--  CSS -->
     <link rel="stylesheet" href="./static/css/styles.css">
     
-    <title>Meet Tony</title>
+    <title>Meet Philani</title>
 </head>
 
 <body>
@@ -102,8 +102,14 @@
                         </li>
 
                     </ul>
-                    <a href="{% url 'meetphilani:portfolio'%}" class="btn aboutme-button-works  mr-5 mb-2">View Works </a>
-                    <a href="#" class="btn aboutme-button-cv  mb-2">Download CV </a>
+                    <div class="row">
+                        <div class="col-3">
+                            <a href="{% url 'meetphilani:portfolio'%}" class="btn aboutme-button-works  mr-5 mb-2">View Works </a>
+                        </div>
+                        <div class="col-3">
+                            <a href="#" class="btn aboutme-button-cv  mb-2">Download CV </a>
+                        </div>
+                    </div>
 
                 </div>
             </div>
@@ -200,7 +206,7 @@
     <section class="workexprience">
         <div class="container">
             <h2 class="workexprience-heading">
-                Work Exprience
+                Work Experience
             </h2>
             <hr class="workexprience-underliner" />
             <!--exprience-->
@@ -238,6 +244,10 @@
 
             </div>
             <!--recommendations-->
+            <h2 class="workexprience-heading mt-5">
+                A Few Recommendations
+            </h2>
+            <hr class="workexprience-underliner" />
             <div class="row">
                 <div class="col-md-4 col-sm-12 mb-3">
                     <div class="card recommendation">

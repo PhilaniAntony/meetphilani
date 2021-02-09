@@ -5,7 +5,7 @@ body {
 
 .page-header {
   position: relative;
-  background-image: url("../images/pillz.jpg");
+  background-image: url("../images/designed.png");
   background-size: cover;
   background-position: center top;
   color: #f5f0f0;
@@ -139,7 +139,7 @@ body {
 }
 .page-header_banner--blockquote {
   position: relative;
-  transform: translateY(-15%);
+  transform: translateY(350%);
 }
 @media (max-width: 768px) {
   .page-header_banner--blockquote {
@@ -268,7 +268,7 @@ a.logo:hover {
 }
 
 .footer {
-  margin-top: 1rem;
+  margin-top: 4rem;
   height: 7vh;
   text-align: center;
   position: relative;
@@ -291,7 +291,7 @@ a.logo:hover {
 }
 
 .aboutme {
-  margin-bottom: 1.5rem;
+  margin: 3.5rem 0;
 }
 .aboutme-heading {
   letter-spacing: 1px;
@@ -363,7 +363,7 @@ hr {
 .services-underliner {
   width: 10%;
   margin: auto;
-  margin-bottom: 1rem;
+  margin-bottom: 3.5rem;
 }
 .services-summary {
   margin: auto;
@@ -665,6 +665,10 @@ img.img-fluid.recommendation-image {
 .recommendation-info {
   text-align: center;
   margin-top: 1rem;
+}
+
+ul.aboutme-links.list-inline {
+  margin: 2rem 0;
 }
 
 /*# sourceMappingURL=styles.css.map */

@@ -1,6 +1,6 @@
 .page-header {
   position: relative;
-  background-image: url("../images/pillz.jpg");
+  background-image: url("../images/designed.png");
   background-size: cover;
   background-position: center top;
   color: $base-contrast;
@@ -100,7 +100,7 @@
     }
     &--blockquote {
       position: relative;
-      transform: translateY(-15%);
+      transform: translateY(350%);
       @media (max-width: 768px) {
         display: none;
       }

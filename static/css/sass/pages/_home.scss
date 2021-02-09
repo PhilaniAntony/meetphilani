@@ -1,6 +1,6 @@
 //aboutme
 .aboutme {
-  margin-bottom: 1.5rem;
+  margin: 3.5rem 0;
   &-heading {
     letter-spacing: 1px;
   }
@@ -57,7 +57,7 @@ hr {
   &-underliner {
     width: 10%;
     margin: auto;
-    margin-bottom: 1rem;
+    margin-bottom: 3.5rem;
   }
   &-summary {
     margin: auto;
@@ -297,4 +297,7 @@ img.img-fluid.recommendation-image {
 .recommendation-info {
   text-align: center;
   margin-top: 1rem;
+}
+ul.aboutme-links.list-inline {
+  margin: 2rem 0;
 }
