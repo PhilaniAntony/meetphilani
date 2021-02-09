@@ -84,11 +84,11 @@
                 </div>
                 <div class="col-8">
                     <p class="aboutme-summary">
-                        Philani is a data enthusiast who fell in love with storytelling and spotting the insights, trends, and hidden gems  in data. 
-                        He spent the whole of 2020 focusing on learning data science and its implementation in growing African nations' economies and 
-                        counter poverty. Creativity, focused, goal-driven, dedicated, team player, and learner mindset are the core values that drive
-                        Philani, not to mention his hunger to help to create a better Africa. Philani's motto is one borrowed from Micheal Jordan,
-                        "Talent wins games, but teamwork and intelligence win championships".
+                        Philani is a data enthusiast who fell in love with spotting the insights, trends, 
+                        and hidden gems in data. He spent 2020 focusing on learning data science and its implementation in improving the economy of 
+                        growing African nations. Creative, focused, goal-driven, dedicated, team player, 
+                        and a learner mindset are the core values that drive Philani.
+                        Philani's motto is one borrowed from Micheal Jordan, "Talent wins games, but teamwork and intelligence win championships".
                     </p>
                     <ul class="aboutme-links list-inline">
                         <li class="list-inline-item">
@@ -186,7 +186,7 @@
                                     Brand Development
                                     
                                 </h3>
-                                <a href='mailto:philani@lifechoices.co.za' class="btn services-card-inner--btn">Contact Philani</a>
+                                <a href='mailto:philani@lifechoices.co.za' target="_blank" class="btn services-card-inner--btn">Mail For Demo </a>
                                 <div class="services-card-inner--front one--overlay"></div>
                             </div>
                         </div>
@@ -250,72 +250,121 @@
             <!--portfolio tags -->
             <div class="row">
                 <div class="col-md-6 col-sm-12 mb-3">
-                    <div class="services-card">
-                        <div class="services-card-inner ">
-                            <div class="services-card-inner--front five ">
-                                <h3 class="services-card-inner--title mb-3">
-                                    <h4 class="portfolio-card-title">The Look</h4>
+                    <div class="portfolio-card">
+                        <div class="portfolio-card-inner ">
+                            <div class="portfolio-card-inner--front one ">
+                                <h3 class="portfolio-card-inner--title mb-3">
+                                    The Look
                                 </h3>
+                                <hr class="portfolio-card-divider">
+                                <p class="portfolio-card-inner--text">
+                                    The Look is an online store that specialise in urban clothing niche.Build on a Python web framework, Django and 
+                                     using a sqlite3 database for backend.HTML, BOOTSTRAP, SCSS and JavaScript were used for the frontend.The store uses paypal as 
+                                     a payment gate. 
+                                </p>
                                 <ul class="list-inline portfolio-card-list">
                                     <li class="list-inline-item">HTML</li>
+                                    <li class="list-inline-item">Bootsrap</li>
                                     <li class="list-inline-item">SCSS</li>
                                     <li class="list-inline-item">JAVASCRIPT</li>
                                     <li class="list-inline-item">DJANGO</li>
                                  </ul>
-                                 <a href="https://github.com/PhilaniAntony/The_Look" class="btn  portfolio-card-link">Source Code</a>
-                                  <a href="https://thelookza.herokuapp.com/" class="btn portfolio-card-link">Deployed Version</a>
-                                <div class="services-card-inner--front one--overlay"></div>
+                                 <div class="buttons">
+                                    <a href="https://github.com/PhilaniAntony/The_Look" target="_blank" class="btn  portfolio-card-link">Source Code</a>
+                                    <a href="https://thelookza.herokuapp.com/" target="_blank" class="btn portfolio-card-link">Deployed Version</a>
+                                 </div>
+                                 <div class="portfolio-card--overlay"></div>
                             </div>
                             
+
                         </div>
                     </div>
                     
                 </div>
                 <!--col-->
                 <div class="col-md-6 col-sm-12 mb-3">
-                    <div class="card portfolio-card">
-                        <img src="{% static 'images/crm.jpg'%}" srcset="" alt="brand strategist" class="img-fluid portfolio-card-image">
-                        <div class="card-body">
-                          <h4 class="card-title portfolio-card-title">Django CRM</h4>
-                          <ul class="list-inline portfolio-card-list">
-                            <li class="list-inline-item">HTML</li>
-                            <li class="list-inline-item">TailwindCSS</li>
-                            <li class="list-inline-item">DJANGO</li>
-                         </ul>
-                         <a href="https://github.com/PhilaniAntony/django-crm" class="btn  portfolio-card-link">Source Code</a>
-                          <a href="https://pandacrm.herokuapp.com/" class="btn portfolio-card-link">Deployed Version</a>
-                         
+                    <div class="portfolio-card">
+                        <div class="portfolio-card-inner ">
+                            <div class="portfolio-card-inner--front two ">
+                                <h3 class="portfolio-card-inner--title mb-3">
+                                    Panda Dash
+                                </h3>
+                                <hr class="portfolio-card-divider">
+                                <p class="portfolio-card-inner--text">
+                                    Panda Dash is a CMS for large organisations for storing leads and agents with a sign up feature.
+                                    The project is build on a Python framework called Django , with HTML, TailwindCSS, SCSS and JavaScript used for the frontend.
+                                    Panda dash uses Postgresql as database.
+                                </p>
+                                <ul class="list-inline portfolio-card-list">
+                                    <li class="list-inline-item">HTML</li>
+                                    <li class="list-inline-item">TailwindCSS</li>
+                                    <li class="list-inline-item">SCSS</li>
+                                    <li class="list-inline-item">JAVASCRIPT</li>
+                                    <li class="list-inline-item">DJANGO</li>
+                                 </ul>
+                                 <div class="buttons">
+                                    <a href="https://github.com/PhilaniAntony/django-crm"  target="_blank"class="btn  portfolio-card-link">Source Code</a>
+                                    <a href="https://pandacrm.herokuapp.com/" target="_blank" class="btn portfolio-card-link">Deployed Version</a>
+                                 </div>
+                                 <div class="portfolio-card--overlay"></div>
+                            </div> 
                         </div>
+                        
                     </div>
                    
                 </div>
                 <!--col-->
                 <div class="col-md-6 col-sm-12 mb-3">
-                    <div class="card portfolio-card">
-                        <img src="{% static 'images/rpashot.png' %}" srcset="" alt="bot developer" class="img-fluid portfolio-card-image">
-                        <div class="card-body">
-                            <h4 class="portfolio-card-title">Data Extractor</h4>
-                            <ul class="list-inline portfolio-card-list">
-                              <li class="list-inline-item">RPA</li>
-                              <li class="list-inline-item">AUTOMATION ANYWHERE</li>
-                           </ul>
-                            
+                    <div class="portfolio-card">
+                        <div class="portfolio-card-inner ">
+                            <div class="portfolio-card-inner--front four ">
+                                <h3 class="portfolio-card-inner--title mb-3">
+                                    Online Store Sales Analysis
+                                </h3>
+                                <hr class="portfolio-card-divider">
+                                <p class="portfolio-card-inner--text">
+                                    In this project Phialni seeks to create meaningfull insights from sales accumulated  over a year.Working with Python and Pandas,
+                                    Philani answers the most important questions regarding sales and spotting the hidden trends.
+                                </p>
+                                <ul class="list-inline portfolio-card-list">
+                                    <li class="list-inline-item">PYTHON</li>
+                                    <li class="list-inline-item">PANDAS</li>
+                                    <li class="list-inline-item">DATA ANALYSIS</li>
+                                 </ul>
+                                 <div class="buttons" >
+                                    <a href="https://github.com/PhilaniAntony/salesanalytics.git" target="_blank" class="btn  portfolio-card-link">Source Code</a>
+                                 </div>
+                                 <div class="portfolio-card--overlay"></div>
+                            </div> 
                         </div>
                     </div>
                     
                 </div>
                 <!--col-->
                 <div class="col-md-6 col-sm-12 mb-3">
-                    <div class="card portfolio-card">
-                        <img src="{% static 'images/sales.png'%}" srcset="" alt="web developer" class="img-fluid portfolio-card-image">
-                        <div class="card-body">
-                            <h4 class="portfolio-card-title">Sales Analytics</h4>
-                            <ul class="list-inline portfolio-card-list">
-                              <li class="list-inline-item">PYTHON</li>
-                              <li class="list-inline-item">DATA ANALYSIS</li>
-                           </ul> 
+                    <div class="portfolio-card">
+                        <div class="portfolio-card-inner ">
+                            <div class="portfolio-card-inner--front four ">
+                                <h3 class="portfolio-card-inner--title mb-3">
+                                    Data Extractor Bot
+                                </h3>
+                                <hr class="portfolio-card-divider">
+                                <p class="portfolio-card-inner--text">
+                                    The Bot key roles is to extract data from a website and populate a excel sheet which will be mailed to the sales department and also 
+                                    add the information to a data silo. Automation Anywhere platform ws used for Robotic Process Automation.
+                                </p>
+                                <ul class="list-inline portfolio-card-list">
+                                    <li class="list-inline-item">RPA</li>
+                                    <li class="list-inline-item">AUTOMATION ANYWHERE</li>
+                                 </ul>
+                                 <div class="buttons">
+                                    <a href="mailto:philani@lifechoices.co.za" target="_blank" class="btn  portfolio-card-link">Mail For Demo</a>
+                                 </div>
+                                 <div class="portfolio-card--overlay"></div>
+                            </div> 
                         </div>
                     </div>
+                
                 </div>
             </div>
         </div>

@@ -161,14 +161,26 @@ span.service-card_title--icon {
     }
   }
   &-card {
-    border-color: rgba($base-color, 0.6);
-    &-title {
-      color: $base-color;
-      font-weight: 300;
+    background-color: transparent;
+    color: $base-contrast;
+    box-sizing: border-box;
+    padding: 5px;
+    margin: auto;
+    border: 1px solid rgba($theme-color, 0.1);
+    position: relative;
+    &--overlay {
+      @include skill_card-overlay;
+      z-index: 0;
     }
-    &-image {
-      height: 35vh;
-      border: 1px solid $base-color;
+
+    &-inner {
+      &--front {
+        z-index: 1000;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
     }
     &-list {
       //margin-top: -0.5rem;
@@ -183,7 +195,7 @@ span.service-card_title--icon {
       }
     }
     &-link {
-      @include worksbutton($theme-color, $base-color);
+      @include worksbutton($theme-color, $base-contrast);
       margin-right: 1rem;
       margin-bottom: 1rem;
     }
@@ -246,4 +258,31 @@ span.service-card_title--icon {
   &-btn {
     @include worksbutton($theme-color, $base-color);
   }
+}
+.portfolio-card-inner--front.one {
+  //background: url("../images/thelook.png");
+  background-size: cover;
+  position: relative;
+}
+h3.portfolio-card-inner--title.mb-3 {
+  color: $base-contrast;
+  z-index: 1000;
+  padding: 1.5rem 0 0 0;
+}
+p.portfolio-card-inner--text {
+  text-align: center;
+  z-index: 1000;
+  padding: 0 1rem;
+}
+hr.portfolio-card-divider {
+  width: 10%;
+  border: 2px $base-contrast solid;
+  z-index: 1000;
+  margin-top: -0.75rem;
+}
+ul.list-inline.portfolio-card-list {
+  z-index: 1000;
+}
+div.buttons {
+  z-index: 1000;
 }
