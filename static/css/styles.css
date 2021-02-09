@@ -18,7 +18,7 @@ body {
   background: rgba(16, 24, 32, 0.4);
   position: absolute;
   top: 0;
-  z-index: -1000;
+  z-index: 100;
 }
 @media (max-width: 320px) {
   .page-header {
@@ -263,6 +263,10 @@ a.logo:hover {
   transform: scale(1.1);
 }
 
+.navbar {
+  z-index: 1000;
+}
+
 .footer {
   margin-top: 1rem;
   height: 7vh;
@@ -427,7 +431,7 @@ hr {
   position: absolute;
   width: 100%;
   height: 100%;
-  background: rgba(16, 24, 32, 0.4);
+  background: rgba(16, 24, 32, 0.8);
 }
 .services-card-inner--front.two {
   background-image: url("../images/rpaflow.jpeg");
@@ -438,7 +442,7 @@ hr {
   position: absolute;
   width: 100%;
   height: 100%;
-  background: rgba(16, 24, 32, 0.4);
+  background: rgba(16, 24, 32, 0.8);
 }
 .services-card-inner--front.three {
   background-image: url("../images/WebApps.jpg");
@@ -449,7 +453,7 @@ hr {
   position: absolute;
   width: 100%;
   height: 100%;
-  background: rgba(16, 24, 32, 0.4);
+  background: rgba(16, 24, 32, 0.8);
 }
 .services-card-inner--front.four {
   background-image: url("../images/brands.jpeg");
@@ -460,7 +464,7 @@ hr {
   position: absolute;
   width: 100%;
   height: 100%;
-  background: rgba(16, 24, 32, 0.4);
+  background: rgba(16, 24, 32, 0.8);
 }
 
 span.service-card_title--icon {
