@@ -286,3 +286,15 @@ ul.list-inline.portfolio-card-list {
 div.buttons {
   z-index: 1000;
 }
+img.img-fluid.recommendation-image {
+  height: 230px;
+  border-radius: 50%;
+  border: 2px solid $theme-color;
+  transform: translateX(20%);
+  /* margin: auto; */
+  /* text-align: center; */
+}
+.recommendation-info {
+  text-align: center;
+  margin-top: 1rem;
+}
