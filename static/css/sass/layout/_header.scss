@@ -100,7 +100,7 @@
     }
     &--blockquote {
       position: relative;
-      transform: translateY(350%);
+      transform: translateY(250%);
       @media (max-width: 768px) {
         display: none;
       }
@@ -138,7 +138,7 @@
     transform: translateY(200%);
   }
   @media (min-width: 768.9px) and (max-width: 1024px) {
-    transform: translateY(200%);
+    transform: translateY(150%);
   }
   @media (min-width: 1024.9px) {
     transform: translateY(200%);
