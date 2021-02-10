@@ -243,11 +243,11 @@
             
             <div class="row align-items-center ">
                 <!--Contact Info-->
-                <div class="col-4">
+                <div class="col-md-4 col-sm-12">
                     <h3 class="contact-info">Contact Info</h3>
 
                     <p class="contact-text"> <i class="bi bi-geo-alt-fill"></i> Cape Town, South Africa </p>
-                    <p class="contact-text"> <i class="bi bi-envelope-fill"></i> tony@meettony.com</p>
+                    <p class="contact-text"> <i class="bi bi-envelope-fill"></i> philani@lifechoices.co.za</p>
                     <p class="contact-text"> <i class="bi bi-telephone-fill"></i> +27-685-553-241 </p>
 
                     <h3 class="contact-info">Platforms</h3>
@@ -262,11 +262,12 @@
                         <li class="list-inline-item">
                             <a href="https://repl.it/@PhilaniAntony" target="_blank"  class="banner-link--item"> <i class="bi bi-code-slash"></i> </a>
                         </li>
+
                     </ul>
-                    <h3 class="contact-logo">philani</h3>
+                    <a class="logo" href="{% url 'meetphilani:home'%}">philani</a>
                 </div>
                 <!--Contact Form-->
-                <div class="col-8">
+                <div class="col-md-8 col-sm-12">
                     <h3 class="contact-subheading">Let's Collaborate</h3>
                     <form method='POST' class="row g-3">
                         {% csrf_token %}
