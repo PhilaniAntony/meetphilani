@@ -104,6 +104,10 @@
       @media (max-width: 768px) {
         display: none;
       }
+      @media (min-width: 768.9px) and(max-width:1024px) {
+        transform: translateY(160%);
+      }
+
       &-text {
         font-style: italic;
       }
@@ -139,9 +143,6 @@
   }
   @media (min-width: 768.9px) and (max-width: 1024px) {
     transform: translateY(150%);
-  }
-  @media (min-width: 1024.9px) {
-    transform: translateY(200%);
   }
 }
 a.banner-link--item {

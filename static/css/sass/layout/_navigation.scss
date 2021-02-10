@@ -39,7 +39,14 @@ a.logo {
     text-decoration: none;
     transform: scale(1.1);
   }
+  @media (max-width: 425px) {
+    display: none;
+  }
 }
 .navbar {
   z-index: 1000;
+}
+.navbar-light .navbar-toggler {
+  color: $theme-color;
+  border-color: $theme-color;
 }

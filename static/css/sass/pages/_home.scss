@@ -10,6 +10,9 @@
     height: 2px;
     width: 25%;
     margin-right: auto;
+    @media (max-width: 425px) {
+      margin: auto;
+    }
   }
   &-summary {
     color: $base-color;
@@ -192,6 +195,10 @@ span.service-card_title--icon {
         border-radius: 5px;
         font-size: 12px;
         transition: all ease-in-out 0.5s;
+        @media (max-width: 768px) {
+          text-align: center;
+          margin-bottom: 10px;
+        }
       }
     }
     &-link {
@@ -268,6 +275,9 @@ h3.portfolio-card-inner--title.mb-3 {
   color: $base-contrast;
   z-index: 1000;
   padding: 1.5rem 0 0 0;
+  @media (max-width: 425px) {
+    text-align: center;
+  }
 }
 p.portfolio-card-inner--text {
   text-align: center;
@@ -282,17 +292,48 @@ hr.portfolio-card-divider {
 }
 ul.list-inline.portfolio-card-list {
   z-index: 1000;
+  @media (max-width: 768px) {
+    text-align: center;
+  }
 }
 div.buttons {
   z-index: 1000;
+  @media (max-width: 768px) {
+    text-align: center;
+  }
 }
 img.img-fluid.recommendation-image {
   height: 230px;
   border-radius: 50%;
   border: 2px solid $theme-color;
   transform: translateX(20%);
-  /* margin: auto; */
-  /* text-align: center; */
+  @media (max-width: 320px) {
+    transform: translateX(2%);
+  }
+  @media (min-width: 321.9px) and (max-width: 375px) {
+    transform: translateX(2%);
+  }
+  @media (min-width: 375.9px) and (max-width: 425px) {
+    transform: translateX(4%);
+  }
+  @media (min-width: 425.9px) and (max-width: 768px) {
+    height: 200px;
+    transform: translateX(0%);
+  }
+  @media (min-width: 768.9px) and (max-width: 1024px) {
+    transform: translateX(10%);
+  }
+  @media (min-width: 1024.9px) and (max-width: 1440px) {
+    transform: translateX(35%);
+  }
+  @media (min-width: 1440px) {
+    transform: translateX(35%);
+  }
+}
+.card {
+  @media (max-width: 425px) {
+    text-align: center;
+  }
 }
 .recommendation-info {
   text-align: center;
@@ -300,4 +341,9 @@ img.img-fluid.recommendation-image {
 }
 ul.aboutme-links.list-inline {
   margin: 2rem 0;
+}
+.row.align-items-center {
+  @media (max-width: 425px) {
+    text-align: center;
+  }
 }
