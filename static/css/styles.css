@@ -171,7 +171,6 @@ body {
 .lower {
   justify-self: flex-end;
   position: relative;
-  transform: translateY(350%);
 }
 @media (max-width: 320px) {
   .lower {
@@ -195,7 +194,17 @@ body {
 }
 @media (min-width: 768.9px) and (max-width: 1024px) {
   .lower {
+    transform: translateY(125%);
+  }
+}
+@media (min-width: 1024.9px) and (max-width: 1440px) {
+  .lower {
     transform: translateY(150%);
+  }
+}
+@media (min-width: 1440px) {
+  .lower {
+    transform: translateY(200%);
   }
 }
 
