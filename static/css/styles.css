@@ -341,6 +341,7 @@ a.logo:hover {
 @media (max-width: 425px) {
   .aboutme-underliner {
     margin: auto;
+    margin-bottom: 2rem;
   }
 }
 .aboutme-summary {
