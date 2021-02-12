@@ -49,3 +49,11 @@ class Collaboration(models.Model):
 
     def __str__(self):
         return self.name
+
+
+class FileAdmin(models.Model):
+    admin_upload = models.FileField(upload_to='media')
+    title = models.CharField(max_length=50)
+
+    def __str__(self):
+        return self.title

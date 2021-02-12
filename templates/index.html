@@ -106,9 +106,11 @@
                         <div class="col-sm-4">
                             <a href="{% url 'meetphilani:portfolio'%}" class="btn aboutme-button-works  mr-5 mb-2">View Works </a>
                         </div>
+                        {% for file in file %}
                         <div class="col-sm-5">
-                            <a href="#" class="btn aboutme-button-cv  mb-2">Download CV </a>
+                            <a href="{{file.admin_upload.url}}" download="{{file.admin_upload.ur}}" class="btn aboutme-button-cv  mb-2">Download CV </a>
                         </div>
+                        {% endfor %}
                     </div>
 
                 </div>
